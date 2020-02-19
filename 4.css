@@ -1,0 +1,119 @@
+.Home_ {
+  width: 360px;
+  height: 640px;
+  background-color: #ffffff;
+}
+.Icon-ionic-md-person {
+  width: 27px;
+  height: 27px;
+  background-color: #000000;
+}
+.title {
+  margin: 79px 24px 0px 25px;
+  width: 311px;
+  height: 30px;
+  font-family: AppleSDGothicNeo;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #61943e;
+}
+.-\31 0 {
+  width: 102px;
+  height: 39px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+.btn  {
+  margin: 150px 80px 0px 80px;
+  width: 200px;
+  height: 53px;
+  border-radius: 16px;
+  border: solid 1px #314e49;
+  background-color: #314e49;
+}
+.btn2  {
+  margin: 160px 80px 0px 80px;
+  width: 200px;
+  height: 53px;
+  border-radius: 16px;
+  border: solid 1px #314e49;
+  background-color: #314e49;
+  position: absolute;
+}
+.btnname{
+  margin: 15px 65px 0px 55px;
+ width: 90px;
+ height: 24px;
+ font-family: AppleSDGothicNeo;
+ font-size: 20px;
+ font-weight: 800;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: center;
+ color: #ffffff;
+}
+.btnname2{
+  margin: 15px 65px 0px 55px;
+ width: 90px;
+ height: 24px;
+ font-family: AppleSDGothicNeo;
+ font-size: 20px;
+ font-weight: 800;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.2;
+ letter-spacing: normal;
+ text-align: center;
+ color: #ffffff;
+}
+.imgblue{
+  margin:49px 0px 0px 30px;
+  width: 97px;
+  height: 71px;
+  object-fit: contain;
+  float:left;
+}
+.imgblue2{
+  margin:49px 0px 0px 30px;
+  width: 97px;
+  height: 71px;
+  object-fit: contain;
+  float:left;
+}
+.word  {
+  margin-top: 49px;
+  width: 57px;
+  height: 24px;
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  float:left;
+}
+.word2 {
+  margin-top:11px;
+  width: 198px;
+  height: 24px;
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  float:left;
+}
