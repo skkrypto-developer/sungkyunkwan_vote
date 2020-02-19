@@ -1,4 +1,4 @@
-# sungkyunkwan_vote
+# 성균투표(SungKyunKwan_Vote)
 
 [성균투표 시스템]
 
