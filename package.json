@@ -1,0 +1,29 @@
+{
+  "name": "sungkyunkwan_vote",
+  "version": "1.0.0",
+  "description": "[성균투표 시스템]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skkrypto-developer/sungkyunkwan_vote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skkrypto-developer/sungkyunkwan_vote/issues"
+  },
+  "homepage": "https://github.com/skkrypto-developer/sungkyunkwan_vote#readme",
+  "dependencies": {
+    "console-stamp": "^0.2.9",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "session-file-store": "^1.4.0"
+  }
+}
