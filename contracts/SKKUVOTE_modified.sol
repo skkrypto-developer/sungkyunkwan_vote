@@ -1,4 +1,4 @@
-pragma solidity ^0.5.11;
+pragma solidity ^0.5.0;
 
 contract Election {
     uint nowtotalvote = 0;

@@ -4,9 +4,15 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const logger = require('morgan');
 const FileStore = require('session-file-store')(session);
+const cors = require('cors');
 
 const indexRouter = require('./router/index'); //모듈 추가
 const walletRouter = require('./router/wallet');
+
+const corsOptions = {
+    origin: true,
+    credentials: true
+};
 
 const app = express();
 
@@ -26,12 +32,15 @@ app.use(session({
     secret: 'skkrypto2018',
     resave: false,
     saveUninitialized: true,
-    store: new FileStore(),
+    store: new FileStore({logFn: function(){}}),
     cookie: {
         httpOnly: false,
         secure: false
     }
 }))
+
+//cors
+app.use(cors(corsOptions));
 
 app.use('/', indexRouter);
 app.use('/wallet', walletRouter);
