@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+#back {
+    font-size: 30px;
+    color: #45b649;
+    cursor: pointer;
+    position: absolute;
+    top: 5vmax;
+    left: 8vmin;
+}
+.myPageHeader {
+    width: 100vmin;
+    height: 38vmax;
+}
+.logoCircle {
+    width: 56vw;
+    height: 56vw;
+    background-color: white;
+    position: relative;
+    top: 3vmax;
+    left: 23vw;
+}
+#userName {
+    position: relative;
+    top: -2vmax;
+    text-align: center;
+    font-size: 2rem;
+    color: #7d7b7c;
+
+}
+.tokenInfo {
+    width: 80vmin;
+    height: 15vmax;
+    background: linear-gradient(120deg, #c5e659, #45b649);
+    border-radius: 3px;
+    position: relative;
+    top: 3vh;
+    left: 10vmin;
+    z-index: 2;
+}
+.token {
+    color: #ffffff;
+    position: relative;
+    top: 3.5vh;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+.balance {
+    color: #ffffff;
+    position: relative;
+    top: 3.5vh;
+    text-align: center;
+}
+.tokenInfoBack1 {
+    width: 78vmin;
+    height: 13vmax;
+    background: linear-gradient(120deg,#45b649, #c5e659);
+    border-radius: 3px;
+    opacity: 0.3;
+    position: relative;
+    top: -9.5vh;
+    left: 11vw;
+    z-index: 1;
+}
+.tokenInfoBack2 {
+    width: 76vmin;
+    height: 13vmax;
+    background: linear-gradient(120deg,#c5e659, #45b649);
+    border-radius: 3px;
+    opacity: 0.2;
+    position: relative;
+    top: -22vh;
+    left: 12.5vw;
+    z-index: -1;
+}
+.voteInfo {
+    width: 80vmin;
+    height: 30vmax;
+    background: linear-gradient(120deg, #c5e659, #45b649);
+    border-radius: 3px;
+    position: relative;
+    top: -19vh;
+    left: 10vmin;
+}
+.vote {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 3vh;
+}
+.txHash {
+    color: #ffffff;
+    word-break: break-all;
+    text-align: center;
+    position: relative;
+    top: 4.5vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.explain {
+    color: #ffffff;
+    text-align: center;
+    word-break: keep-all;
+    position: relative;
+    top: 6vh;
+    font-weight: bold;
+    margin-right: 7vw;
+    margin-left: 7vw;
+}
+.voteInfoBack1 {
+    width: 78vmin;
+    height: 3.8vmax;
+    background: linear-gradient(120deg, #45b649, #c5e659);
+    border-radius: 3px;
+    opacity: 0.4;
+    position: relative;
+    top: -22vh;
+    left: 11vw;
+    z-index: -1;
+}
+.voteInfoBack2 {
+    width: 76vmin;
+    height: 0.5vmax;
+    background: linear-gradient(120deg,#c5e659, #45b649);
+    border-radius: 3px;
+    opacity: 0.3;
+    position: relative;
+    top: -22vh;
+    left: 12vw;
+    z-index: -1;
+}
+.voteInfoBack3 {
+    width: 74vmin;
+    height: 0.5vmax;
+    background: linear-gradient(120deg, #45b649, #c5e659);
+    border-radius: 3px;
+    opacity: 0.2;
+    position: relative;
+    top: -22vh;
+    left: 13vw;
+    z-index: -1;
+}
+.voteInfoBack4 {
+    width: 72vmin;
+    height: 0.5vmax;
+    background: linear-gradient(120deg,#c5e659, #45b649);
+    border-radius: 3px;
+    opacity: 0.1;
+    position: relative;
+    top: -22vh;
+    left: 14vw;
+    z-index: -1;
+}
