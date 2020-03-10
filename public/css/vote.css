@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+#back {
+    font-size: 30px;
+    color: #45b649;
+    cursor: pointer;
+    position: absolute;
+    top: 5vmax;
+    left: 8vmin;
+}
+#electionName {
+    color: #7d7b7c;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 11vmax;
+}
+
+/* candidate 1 css */
+.candidate1 {
+    width: 80vmin;
+    height: 30vmax;
+    position: absolute;
+    top: 20vmax;
+    left: 10vmin;
+    box-shadow: 0 4px 8px 0 rgba(69, 182, 73, 0.2), 0 6px 20px 0 rgba(69, 182, 73, 0.19);
+}
+.candidateEmblem {
+    width: 28vmin;
+    height: 28vmin;
+    position: relative;
+    top: 2vmax;
+    left: 10vmin;
+}
+#candiNumber {
+    color: #7d7b7c;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 4vmax;
+    left: 50vmin;
+}
+#candiBrand {
+    color: #7d7b7c;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 8.5vmax;
+    left: 47vmin;
+}
+.candi1Names {
+    color: #7d7b7c;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 19vmax;
+    left: 10vmin;
+}
+#president {
+    margin-bottom: 6px;
+}
+#vote1 {
+    width: 13vmin;
+    height: 13vmin;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 19vmax;
+    left: 53vmin;
+    border-radius: 50%;
+}
+
+/* candidate 2 css */
+.candidate2 {
+    width: 80vmin;
+    height: 30vmax;
+    position: absolute;
+    top: 55vmax;
+    left: 10vmin;
+    box-shadow: 0 4px 8px 0 rgba(69, 182, 73, 0.2), 0 6px 20px 0 rgba(69, 182, 73, 0.19);
+}
+#vote2 {
+    width: 13vmin;
+    height: 13vmin;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 19vmax;
+    left: 53vmin;
+    border-radius: 50%;
+}
+
+/* giveUp BTN */
+#giveUp {
+    width: 40vmin;
+    height: 7vmax;
+    border: none;
+    background-color: #7d7b7c;
+    opacity: 0.7;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 89vmax;
+    left: 30vmin;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
