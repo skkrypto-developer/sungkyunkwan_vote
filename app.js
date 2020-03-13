@@ -6,8 +6,12 @@ const logger = require('morgan');
 const FileStore = require('session-file-store')(session);
 const cors = require('cors');
 
-const indexRouter = require('./router/index'); //모듈 추가
-const walletRouter = require('./router/wallet');
+const splashRouter = require('./routes/splash'); //모듈 추가
+const loginRouter = require('./routes/login');
+const setUserKeyRouter = require('./routes/setUserKey')
+const menuRouter = require('./routes/menu')
+const myPageRouter = require('./routes/myPage')
+const voteRouter = require('./routes/vote')
 
 const corsOptions = {
     origin: true,
@@ -20,9 +24,8 @@ require('console-stamp')(console, 'yyyy/mm/dd HH:MM:ss.l');
 
 app.set('views', path.resolve(__dirname, 'views'));
 app.set('view engine', 'ejs'); //set view engine
-
-app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'));
 app.use(cookieParser('skkrypto2018'));
 app.use(express.json()); //body-parser 대용
 app.use(express.urlencoded({extended: false})); //body-parser 대용
@@ -42,8 +45,12 @@ app.use(session({
 //cors
 app.use(cors(corsOptions));
 
-app.use('/', indexRouter);
-app.use('/wallet', walletRouter);
+app.use('/', splashRouter);
+app.use('/login', loginRouter);
+app.use('/menu', menuRouter);
+app.use('/setUserKey', setUserKeyRouter);
+app.use('/vote', voteRouter);
+app.use('/myPage', myPageRouter);
 
 app.use((req, res, next) => {
     res.status(404).send('Sorry cant find that');
@@ -53,7 +60,7 @@ app.use((req, res, next) => {
 })
 
 app.listen(3000, () => {
-    console.log('Session test server is started')
+    console.log('Sungkyunkwan vote server is started')
 })
 
 module.exports = app;
