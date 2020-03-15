@@ -35,5 +35,5 @@ $("#vote2").on("click", () => {
 })
 
 $("#giveUp").on("click", () => {
-    
+    // ajax call for giveUp
 })
