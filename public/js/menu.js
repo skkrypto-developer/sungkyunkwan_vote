@@ -7,13 +7,14 @@ $("#checkPage").on("click", () => {
 })
 
 $("#myPage").on("click", () => {
-    window.location.href = "/setUserKey"
+    window.location.href = "/myPage"
 })
 
 $("#logout").on("click", () => {
     $.ajax ({
         url: "/login/out",
         type: "GET",
+        crossDomain: true,
         success: (result) => {
             if (result.msg === "logout success") {
                 window.location.href = "/login"

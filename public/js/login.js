@@ -9,6 +9,7 @@ $("#submit").on("click", () => {
             password: userPassword
         },
         type: "POST",
+        crossDomain: true,
         success: (result) => {
             if (result.msg === "login success") {
                 window.location.href = "/menu"

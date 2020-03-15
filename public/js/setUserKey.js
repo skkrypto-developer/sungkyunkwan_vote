@@ -10,6 +10,7 @@ $("#button").on("click", () => {
         url: "/setUserKey/check",
         data: {userKey: userKey},
         type: "POST",
+        crossDomain: true,
         success: (result) => {
             if (result.msg === "check success") {
 
@@ -27,7 +28,7 @@ $("#button").on("click", () => {
                         'userKey': userKey
                     },
                     success: (result) => {
-                        console.log(result)
+                        window.location.href = '/vote'
                     },
                     error: (request, status, error) => {
                         console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
