@@ -7,7 +7,7 @@ $("#checkPage").on("click", () => {
 })
 
 $("#myPage").on("click", () => {
-    window.location.href = "/myPage"
+    window.location.href = "/getUserKey"
 })
 
 $("#logout").on("click", () => {

@@ -8,10 +8,11 @@ const cors = require('cors');
 
 const splashRouter = require('./routes/splash'); //모듈 추가
 const loginRouter = require('./routes/login');
-const setUserKeyRouter = require('./routes/setUserKey')
-const menuRouter = require('./routes/menu')
-const myPageRouter = require('./routes/myPage')
-const voteRouter = require('./routes/vote')
+const setUserKeyRouter = require('./routes/setUserKey');
+const menuRouter = require('./routes/menu');
+const myPageRouter = require('./routes/myPage');
+const voteRouter = require('./routes/vote');
+const getUserKeyRouter = require('./routes/getUserKey');
 
 const corsOptions = {
     origin: true,
@@ -51,6 +52,7 @@ app.use('/menu', menuRouter);
 app.use('/setUserKey', setUserKeyRouter);
 app.use('/vote', voteRouter);
 app.use('/myPage', myPageRouter);
+app.use('/getUserKey', getUserKeyRouter);
 
 app.use((req, res, next) => {
     res.status(404).send('Sorry cant find that');

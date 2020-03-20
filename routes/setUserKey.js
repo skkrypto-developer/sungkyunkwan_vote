@@ -30,4 +30,9 @@ router.post('/check', (req, res) => {
     })
 })
 
+router.post('/userAddress', (req, res) => {
+    req.session.address = req.body.userAddress
+    console.log(req.session)
+    res.json({"msg" : "success"})
+})
 module.exports = router;

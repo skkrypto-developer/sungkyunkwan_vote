@@ -11,7 +11,7 @@ $("#button").on("click", () => {
         data: {userKey: userKey},
         type: "POST",
         crossDomain: true,
-        timeout: 3000,
+        async: false,
         success: (result) => {
             if (result.msg === "check success") {
 
@@ -20,6 +20,7 @@ $("#button").on("click", () => {
                     url: 'https://api.luniverse.io/tx/v1.1/wallets',
                     type: "POST",
                     crossDomain: true,
+                    async: false,
                     dataType: 'json',
                     headers: {
                         'api-key': 'nkknsGRmsvxZhaK1Zfj6hmqHRcHA6QQXUBcwqqysyVqPSMkDCQH2GAeyxGquMKL2'
@@ -28,17 +29,33 @@ $("#button").on("click", () => {
                         'walletType': "LUNIVERSE",
                         'userKey': userKey
                     },
-                    timeout: 3000,
                     success: (result) => {
-                        window.location.href = '/vote'
+
+                        $.ajax({
+                            url: "/setUserKey/userAddress",
+                            type: "POST",
+                            crossDomain: true,
+                            async: false,
+                            data: {
+                                userAddress: result.data.address
+                            },
+                            success: (result) => {
+                                if (result.msg == "success") {
+                                    window.location.href = '/vote'
+                                } else {
+                                    console.log('ajax success but something wrong')
+                                }
+                            },
+                            error: (request, status, error) => {
+                                console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
+                            }
+                        })
+                        
                     },
                     error: (request, status, error) => {
                         console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
                     }
-                }).fail((jqXHR, textStatus, errorThrown) => {
-                    console.log(errorThrown)
                 })
-
             } else {
                 alert('다시 확인해 주세요')
             }
@@ -46,7 +63,5 @@ $("#button").on("click", () => {
         error: (request, status, error) => {
             console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
         }
-    }).fail((jqXHR, textStatus, errorThrown) => {
-        console.log(errorThrown)
     })
 })

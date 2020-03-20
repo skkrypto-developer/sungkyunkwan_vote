@@ -12,29 +12,11 @@ $(document).ready(() => {
     
     //get userKey
     $.ajax({
-        url: "/vote/userKey",
-        type: "POST",
+        url: "/vote/userAddress",
+        type: "GET",
         crossDomain: true,
-        timeout: 3000,
         success: (result) => {
-            userKey = result.userKey;
-
-            // get wallet
-            $.ajax({
-                url: 'https://api.luniverse.io/tx/v1.1/wallets',
-                type: "POST",
-                crossDomain: true,
-                dataType: "json",
-                headers: {
-                    "api-key" : "nkknsGRmsvxZhaK1Zfj6hmqHRcHA6QQXUBcwqqysyVqPSMkDCQH2GAeyxGquMKL2"
-                },
-                data: {
-                    "walletType" : "LUNIVERSE",
-                    "userKey" : userKey
-                },
-                timeout: 3000,
-                success: (result) => {
-                    address = result.data.address
+            address = result.address
 
                     // get balance
                     $.ajax({
@@ -45,7 +27,6 @@ $(document).ready(() => {
                         headers: {
                             "api-key" : "nkknsGRmsvxZhaK1Zfj6hmqHRcHA6QQXUBcwqqysyVqPSMkDCQH2GAeyxGquMKL2"
                         },
-                        timeout: 3000,
                         success: (result) => {
                             token = result.data.balance
                         },
@@ -53,24 +34,12 @@ $(document).ready(() => {
                             console.log('fail to get balance')
                             console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
                         }
-                    }).fail((jqXHR, textStatus, errorThrown) => {
-                        console.log(errorThrown)
                     })
                 },
-                error: (request, status, error) => {
-                    console.log('fail to get wallet')
-                    console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
-                }
-            }).fail((jqXHR, textStatus, errorThrown) => {
-                console.log(errorThrown)
-            })
-        },
         error: (request, status, error) => {
             console.log('fail to get userKey')
             console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
         }
-    }).fail((jqXHR, textStatus, errorThrown) => {
-        console.log(errorThrown)
     })
 })
 

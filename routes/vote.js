@@ -1,6 +1,5 @@
 const express = require ('express');
 const router = express.Router();
-const db = require('../data/db')
 
 router.get('/', (req, res) => {
     if (req.session.login) {
@@ -11,18 +10,9 @@ router.get('/', (req, res) => {
     }
 })
 
-router.post('/userKey', (req, res) => {
-    let id = req.session.user
-    let getUserKey = 'SELECT studentNumber FROM login WHERE id=?'
-
-    db.query(getUserKey, [id], (error, result) => {
-        if (error) {
-            console.log('get userkey error')
-            throw error
-        } else {
-            res.json({"userKey" : result[0].studentNumber})
-        }
-    })
+router.get('/userAddress', (req, res) => {
+    let address = req.session.address;
+    res.json({address: address})
 })
 
 module.exports = router;
