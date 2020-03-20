@@ -10,6 +10,7 @@ $("#submit").on("click", () => {
         },
         type: "POST",
         crossDomain: true,
+        timeout: 3000,
         success: (result) => {
             if (result.msg === "login success") {
                 window.location.href = "/menu"
@@ -23,5 +24,7 @@ $("#submit").on("click", () => {
             console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
             alert('잠시후 다시 시도해주세요!')
         }
+    }).fail((jqXHR, textStatus, errorThrown) => {
+        console.log(errorThrown)
     })
 })

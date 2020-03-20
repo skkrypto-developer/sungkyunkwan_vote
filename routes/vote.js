@@ -4,7 +4,7 @@ const db = require('../data/db')
 
 router.get('/', (req, res) => {
     if (req.session.login) {
-        res.render('vote.ejs');
+        res.render('vote');
         console.log('vote Page open')
     } else {
         res.redirect("/login")

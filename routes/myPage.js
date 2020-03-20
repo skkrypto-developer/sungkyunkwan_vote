@@ -2,16 +2,10 @@ const express = require ('express');
 const router = express.Router();
 const db = require('../data/db')
 
-router.get('/', (req, res) => {
-    if (req.session.login) {
-        res.render('myPage.ejs');
-        console.log(' myPage open')
-    } else {
-        res.redirect('/login')
-    }
-})
+let address = ""
+let token = 0
 
-router.post('/userKey', (req, res) => {
+router.get('/userKey', (req, res, next) => {
     let id = req.session.user
     let getUserKey = 'SELECT studentNumber FROM login WHERE id=?'
 
@@ -24,5 +18,26 @@ router.post('/userKey', (req, res) => {
         }
     })
 })
+
+router.post('/userInfo', (req, res, next) => {
+    console.log(req.body)
+    token = req.body.userToken
+    address = req.body.userAddress
+})
+
+router.get('/', (req, res) => {
+    if (req.session.login) {
+        res.render('myPage', {
+            ejsToken : token,
+            ejsAddress : address
+        });
+        console.log('myPage open')
+    } else {
+        res.redirect('/login')
+    }
+})
+
+
+
 
 module.exports = router;

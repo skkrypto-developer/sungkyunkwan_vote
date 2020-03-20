@@ -4,7 +4,7 @@ const db = require('../data/db');
 
 // login page open
 router.get('/', (req, res) => {
-    res.render('login.ejs');
+    res.render('login');
     console.log('login Page open')
 })
 

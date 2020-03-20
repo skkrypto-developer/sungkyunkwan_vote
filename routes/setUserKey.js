@@ -4,7 +4,7 @@ const db = require('../data/db');
 
 router.get('/', (req, res) => {
     if (req.session.login) {
-        res.render('setUserKey.ejs');
+        res.render('setUserKey');
         console.log('setUserKey Page open')
     } else {
         res.redirect("/login")

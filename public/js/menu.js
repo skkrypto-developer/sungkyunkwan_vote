@@ -15,6 +15,7 @@ $("#logout").on("click", () => {
         url: "/login/out",
         type: "GET",
         crossDomain: true,
+        timeout: 3000,
         success: (result) => {
             if (result.msg === "logout success") {
                 window.location.href = "/login"
@@ -25,5 +26,7 @@ $("#logout").on("click", () => {
         error: (request, status, error) => {
             console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error)
         }
+    }).fail((jqXHR, textStatus, errorThrown) => {
+        console.log(errorThrown)
     })
 })
