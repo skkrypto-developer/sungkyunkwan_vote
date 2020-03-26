@@ -5,66 +5,50 @@ $("#back").on("click", () => {
 $("#button").on("click", () => {
     let userKey = $("#input").val();
 
-    //create wallet
+    //sending userKey
     $.ajax({
-        url: 'https://api.luniverse.io/tx/v1.1/wallets/bridge',
-        type: "GET",
-        crossDomain: true,
-        async: false,
-        dataType: 'json',
-        headers: {
-            'api-key': 'nkknsGRmsvxZhaK1Zfj6hmqHRcHA6QQXUBcwqqysyVqPSMkDCQH2GAeyxGquMKL2'
-        },
+        url: "getUserKey/userData",
+        type: "POST",
         data: {
-            'walletType': "LUNIVERSE",
-            'userKey': userKey
+            userKey: userKey
         },
+        async: false,
         success: (result) => {
-            let address = result.data.address;
 
-            // get balance
-            $.ajax({
-                url: 'https://api.luniverse.io/tx/v1.1/wallets/' + address + '/FT9754/SK/balance',
-                type: "GET",
-                crossDomain: true,
-                dataType: "json",
-                headers: {
-                    "api-key": "nkknsGRmsvxZhaK1Zfj6hmqHRcHA6QQXUBcwqqysyVqPSMkDCQH2GAeyxGquMKL2"
-                },
-                success: (result) => {
-                    let token = result.data.balance
+            if (result.msg != "fail") {
+                let address = result.address;
+                let balance = result.balance;
 
-                    //sending data
-                    $.ajax({
-                        url: "/getUserKey/userData",
-                        type: "POST",
-                        data: {
-                            userAddress: address,
-                            userBalance: token
-                        },
-                        success: (result) => {
-                            if (result.msg == "success") {
-                                window.location.href = '/myPage'
-                            } else {
-                                alert('새로고침 후 다시 시도해 주세요')
-                            }
-                        },
-                        error: (request, status, error) => {
-                            console.log('fail to sending data')
-                            console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error)
+                // sending address & balance
+                $.ajax({
+                    url: "getUserKey/session",
+                    type: "POST",
+                    data: { 
+                        userAddress: address,
+                        userBalance: balance
+                    },
+                    crossDomain: true,
+                    async: false,
+                    success: (result) => {
+                        if (result.msg == "success") {
+                            window.location.href = "/myPage"
+                        } else {
+                            alert('다시 시도해 주세요')
                         }
-                    })
-                },
-                error: (request, status, error) => {
-                    console.log('fail to get balance')
-                    console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error)
-                }
-            })
+                    },
+                    error: (request, status, error) => {
+                        console.log('fail to sending data')
+                        console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error)
+                    }
+                });
 
+            } else {
+                alert('투표부터 진행해 주세요')
+            }
         },
         error: (request, status, error) => {
-            alert('투표부터 실행해 주세요')
+            console.log('fail to sending data')
             console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error)
         }
-    })
+    });
 })
