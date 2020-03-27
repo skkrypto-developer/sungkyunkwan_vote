@@ -75,8 +75,8 @@ router.post('/userData', async (req, res) => {
 router.post('/session', (req, res) => {
     if (req.body.userAddress) {
         let address = req.body.userAddress;
-        req.session.address = address;
         let balance = req.body.userBalance;
+        req.session.address = address;
         req.session.balance = balance;
         res.json({ "msg": "success" });
     } else {
