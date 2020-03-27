@@ -56,7 +56,7 @@ router.post('/check', (req, res) => {
                             },
                             json: true
                         };
-            
+
                         // get balance
                         request(balanceOptions, (error, response, body) => {
                             if (response.statusCode == 200) {
@@ -67,16 +67,19 @@ router.post('/check', (req, res) => {
                                 });
                             } else {
                                 console.log(error)
+                                console.log("get balance error")
                                 res.json({"msg": "check fail"});
                             }
                         });
 
                     } else {
                         console.log(error);
+                        console.log("get wallet error")
                         res.json({"msg" : "check fail"});
                     }
                 })
             } else {
+                console.log("no data")
                 res.json({"msg" : "check fail"});
             }
         } 
