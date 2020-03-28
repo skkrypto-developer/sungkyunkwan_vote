@@ -31,5 +31,11 @@ Usage
 ------------------
 Login
 ![login](https://user-images.githubusercontent.com/51280827/77818531-80a90080-7116-11ea-9496-2a37b4ced3cc.png)
+- GLS 로그인을 통해 학생 본인임을 인증할 수 있습니다. 
+- 이 과정에서 학교 데이터베이스에 접근해 해당 학생의 학번을 불러와 세션에 저장합니다
+- 계정이 없을 경우 서비스를 이용할 수 없습니다. 반드시 성균관대학교 아이디로 로그인을 해야합니다.
 
+---------------------
+Menu
+![menu](https://user-images.githubusercontent.com/51280827/77818532-830b5a80-7116-11ea-997c-7bdf1ec42c6a.PNG)
 
