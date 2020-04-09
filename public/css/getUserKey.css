@@ -1,43 +1,43 @@
 img{
+  display:block; margin: 0px auto;
+  position:relative;
+  height:auto;
+  top:3vh;
+  width:50vw;
+}
+
+#back {
+  font-size: 30px;
+  color: #45b649;
+  cursor: pointer;
+  position: absolute;
+  top: 5vmax;
+  left: 8vmin;
+}
+#input{
     display:block; margin: 0px auto;
     position:relative;
     height:auto;
-    top:3vh;
-    width:50vw;
-  }
-  
-  #back {
-    font-size: 30px;
-    color: #45b649;
-    cursor: pointer;
-    position: absolute;
-    top: 5vmax;
-    left: 8vmin;
-  }
-  #input{
+    width:40vw;
+    top:30vh;
+    height: 40px;
+    font-family: 'Noto Sans', sans-serif;
+}
+#button{
       display:block; margin: 0px auto;
       position:relative;
       height:auto;
-      width:40vw;
-      top:10vh;
+      top:31vh;
+      width:10vw;
       font-family: 'Noto Sans', sans-serif;
-  }
-  #button{
-        display:block; margin: 0px auto;
-        position:relative;
-        height:auto;
-        top:11vh;
-        width:10vw;
-        font-family: 'Noto Sans', sans-serif;
-  }
-  .InfoPart{
-    width: 80vmin;
-    height: 30vmax;
-    position: absolute;
-    top: 60vh;
-    left: 10vmin;
-    box-shadow: 0 4px 8px 0 rgba(69, 182, 73, 0.2), 0 6px 20px 0 rgba(69, 182, 73, 0.19);
-    text-align:center;
-    font-family: 'Noto Sans', sans-serif;
-  }
-  
+}
+.InfoPart{
+  width: 80vmin;
+  height: 15vmax;
+  position: absolute;
+  top: 30vh;
+  left: 10vmin;
+  box-shadow: 0 4px 8px 0 rgba(69, 182, 73, 0.2), 0 6px 20px 0 rgba(69, 182, 73, 0.19);
+  text-align:center;
+  font-family: 'Noto Sans', sans-serif;
+}
