@@ -38,6 +38,7 @@ app.use(session({
     saveUninitialized: true,
     store: new FileStore({logFn: function(){}}),
     cookie: {
+        // 나중에 true로 바꾸기
         httpOnly: false,
         secure: false
     }
