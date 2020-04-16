@@ -1,4 +1,5 @@
 #splash {
-    width: 100vmin;
-    height: 100vmax;
+    width: 70vmin;
+    position: relative;
+    left: 13vmin;
 }

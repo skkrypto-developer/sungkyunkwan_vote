@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MyPage</title>
+    <title>성균투표</title>
 
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
 
     <!-- css -->
     <link rel="stylesheet" href="css/myPage.css">
@@ -17,27 +17,25 @@
 </head>
 <body>
     <i class="fas fa-chevron-left" id="back"></i>
+    <p id="pageName">내 정보</p>
+    <button class="fas fa-sign-out-alt" id="logout"></button>
     <div class="myPage">
+        <img src="img/skku.jpeg" id="canvas">
+        <img src="img/profile.png" id="userImage">
         <div class="myPageHeader">
-            <img src="img/Emblem_01.jpg" class="logoCircle">
             <p id="userName">김희윤</p>
+            <p id="major">소프트웨어</p>
         </div>
+        <div id="division"></div>
         <div class="myPageFooter">
             <div class="tokenInfo">
                 <p class="token">성균토큰</p>
                 <p class="balance"> <%= ejsToken %> SKKT</p>
             </div>
-            <div class="tokenInfoBack1"></div>
-            <div class="tokenInfoBack2"></div>
             <div class="voteInfo">
                 <p class="vote">선거정보</p>
                 <p class="txHash"> <%= ejsAddress %></p>
-                <p class="explain">투표가 끝난 후 해당 번호를 통해 당신의 투표를 확인해 보세요</p>
             </div>
-            <div class="voteInfoBack1"></div>
-            <div class="voteInfoBack2"></div>
-            <div class="voteInfoBack3"></div>
-            <div class="voteInfoBack4"></div>
         </div>           
     </div>
 </body>

@@ -1,14 +1,24 @@
+@font-face { font-family: 'MapoGoldenPier'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff'); font-weight: normal; font-style: normal; }
 #header{
-  height: 40px;
-  background-color: white;
+  height: 8vmax;
+  width: 100vmin;
+  background-color: #f6f6f6;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 30px;
+  color: #184c42;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 2.3vmax;
   border:0px;
 }
 p{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
 }
-
+.notice {
+  height: 25vmax;
+}
 body,header{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
 }
 .table {
     width: 100%;
@@ -27,10 +37,54 @@ body,header{
 #first{
   margin-top: 15px;
 }
+#second {
+  margin-top: 8px;
+}
 #skkuHeader{
   height: 100%;
   display: block; margin: 0px auto;
   position:relative;
 }
-#logout{ border-top-right-radius: 5px; border-bottom-right-radius: 5px; margin-left:-3px;
-border: 1px solid lightgreen; background-color: rgba(0,0,0,0); color: lightgreen; padding: 5px;}
+#logout{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left:-3px;
+  border: 1px solid #184c42;
+  color: #184c42;
+  padding: 5px;
+  position: relative;
+  top: -5vmax;
+  left: 3vmin;
+}
+#title {
+  color:white;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-top: 4vmax;
+  padding-bottom: 2vmax;
+  font-family: 'MapoGoldenPier', sans-serif;
+  text-shadow: none;
+  text-align: center;
+  font-weight: 600;
+}
+#explain {
+  color:white;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:0px;
+  font-family: 'MapoGoldenPier', sans-serif;
+  text-shadow: none;
+  text-align: center;
+}
+li {
+  text-shadow: none;
+  text-align: left;
+  color: white;
+  font-family: 'MapoGoldenPier';
+  padding-bottom: 6px;
+  padding-left: 17vmin;
+}
+#check {
+  padding-left: 16px;
+  padding-right: 18px;
+}

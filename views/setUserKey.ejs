@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Menu</title>
-<style type="text/css"> .ui-page { background:url(); background-size:100% 100%; } </style>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="path/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/setUserKey.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>성균투표</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
+  <link rel="stylesheet" href="css/setUserKey.css">
 </head>
+
 <body>
-   <a><i class="fas fa-chevron-left" id="back"></i></a>
-  <div class="ImagePart">
-<img src="img/mark.jpg" alt="">
+  <div class="background">
+    <a><i class="fas fa-chevron-left" id="back"></i></a>
+    <p class="title">투 표 하 기</p>
+    <div class="InfoPart">
+      <img class="image" src="img/undraw.png">
+      <p class="warning" style="text-align:center">본인의 학번을 입력해 주세요
+        <div class="inputPart">
+          <input id="input" type="text" name="" value="" placeholder="학번을 입력하세요">
+          <button id="button">입 력</button>
+        </div>
+    </div>
   </div>
-
-
-<div class="InfoPart">
-
-  <p style="text-align:left"><i class="far fa-lightbulb"></i>반드시 본인의 학번으로 투표를 진행해 주시길 바랍니다</p>
-</div>
-<div class="inputPart">
-<input id="input" type="text" name="" value="" placeholder="학번을 입력해 주세요">
-<input id="button" type="button" name="" value="입력">
-</div>
-
 </body>
 
 <!-- jqeury -->

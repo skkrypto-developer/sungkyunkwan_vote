@@ -56,6 +56,10 @@ app.use('/myPage', myPageRouter);
 app.use('/getUserKey', getUserKeyRouter);
 
 app.use((req, res, next) => {
+    res.status(304).redirect(req.get('referer'))
+})
+
+app.use((req, res, next) => {
     res.status(404).send('Sorry cant find that');
 })
 app.use((req, res, next) => {

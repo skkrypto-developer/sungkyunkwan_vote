@@ -1,161 +1,119 @@
+@font-face { font-family: 'MapoGoldenPier'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff'); font-weight: normal; font-style: normal; }
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'NanumBarunGothic', sans-serif;
     box-sizing: border-box;
 }
+body {
+    width: 100vmin;
+    height: 100vmax;
+}
 #back {
-    font-size: 30px;
-    color: #45b649;
+    font-size: 20px;
+    color: #ffd562;
     cursor: pointer;
     position: absolute;
-    top: 5vmax;
-    left: 8vmin;
+    top: 35px;
+    left: 10vmin;
 }
-.myPageHeader {
-    width: 100vmin;
-    height: 38vmax;
+.myPage {
+    width: 80vmin;
+    height: 490px;
+    position: absolute;
+    top: 85px;
+    left: 10vmin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.logoCircle {
-    width: 56vw;
-    height: 56vw;
-    background-color: white;
+#pageName {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 35px;
+    left: 43vmin;
+}
+#logout {
+    font-size: 23px;
+    color: #ffd562;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 35px;
+    left: 88vmin;
+}
+#canvas {
+    width: 80vmin;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     position: relative;
-    top: 3vmax;
-    left: 23vw;
+    top: -5px;
+}
+#userImage {
+    width: 20vmin;
+    border-radius: 50%;
+    background: none;
+    position: relative;
+    top: -55px;
+    left: 30vmin;
 }
 #userName {
     position: relative;
-    top: -2vmax;
+    top: -50px;
     text-align: center;
-    font-size: 2rem;
-    color: #7d7b7c;
-
+    font-size: 30px;
+    color: #fbc028;
+    font-weight: 500;
+    font-family: 'MapoGoldenPier';
 }
-.tokenInfo {
-    width: 80vmin;
-    height: 15vmax;
-    background: linear-gradient(120deg, #c5e659, #45b649);
-    border-radius: 3px;
+#major {
+    font-family: 'MapoGoldenPier';
+    font-size: 15px;
+    color: #adadad;
     position: relative;
-    top: 3vh;
-    left: 10vmin;
-    z-index: 2;
+    top: -45px;
+    left: 30vmin;
+}
+#division {
+    border-bottom: 1.5px solid #949594;
+    width: 10vmin;
+    position: relative;
+    top: -32px;
+    left: 34.5vmin;
 }
 .token {
-    color: #ffffff;
+    color: #949594;
     position: relative;
-    top: 3.5vh;
-    font-size: 1.7rem;
+    top: -15px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: 'MapoGoldenPier';
     text-align: center;
 }
 .balance {
-    color: #ffffff;
+    color: #fbc028;
     position: relative;
-    top: 3.5vh;
+    top: -8px;
     text-align: center;
-}
-.tokenInfoBack1 {
-    width: 78vmin;
-    height: 13vmax;
-    background: linear-gradient(120deg,#45b649, #c5e659);
-    border-radius: 3px;
-    opacity: 0.3;
-    position: relative;
-    top: -9.5vh;
-    left: 11vw;
-    z-index: 1;
-}
-.tokenInfoBack2 {
-    width: 76vmin;
-    height: 13vmax;
-    background: linear-gradient(120deg,#c5e659, #45b649);
-    border-radius: 3px;
-    opacity: 0.2;
-    position: relative;
-    top: -22vh;
-    left: 12.5vw;
-    z-index: -1;
-}
-.voteInfo {
-    width: 80vmin;
-    height: 30vmax;
-    background: linear-gradient(120deg, #c5e659, #45b649);
-    border-radius: 3px;
-    position: relative;
-    top: -19vh;
-    left: 10vmin;
+    font-weight: bold;
 }
 .vote {
-    color: #ffffff;
-    font-size: 1.7rem;
-    font-weight: bold;
-    text-align: center;
+    color: #949594;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'MapoGoldenPier';
     position: relative;
-    top: 3vh;
+    top: 10px;
+    text-align: center;
 }
 .txHash {
-    color: #ffffff;
+    color: #fbc028;
     word-break: break-all;
-    text-align: center;
     position: relative;
-    top: 4.5vh;
+    top: 17px;
     margin-left: 8vw;
     margin-right: 8vw;
-}
-.explain {
-    color: #ffffff;
     text-align: center;
-    word-break: keep-all;
-    position: relative;
-    top: 6vh;
     font-weight: bold;
-    margin-right: 7vw;
-    margin-left: 7vw;
-}
-.voteInfoBack1 {
-    width: 78vmin;
-    height: 3.8vmax;
-    background: linear-gradient(120deg, #45b649, #c5e659);
-    border-radius: 3px;
-    opacity: 0.4;
-    position: relative;
-    top: -22vh;
-    left: 11vw;
-    z-index: -1;
-}
-.voteInfoBack2 {
-    width: 76vmin;
-    height: 0.5vmax;
-    background: linear-gradient(120deg,#c5e659, #45b649);
-    border-radius: 3px;
-    opacity: 0.3;
-    position: relative;
-    top: -22vh;
-    left: 12vw;
-    z-index: -1;
-}
-.voteInfoBack3 {
-    width: 74vmin;
-    height: 0.5vmax;
-    background: linear-gradient(120deg, #45b649, #c5e659);
-    border-radius: 3px;
-    opacity: 0.2;
-    position: relative;
-    top: -22vh;
-    left: 13vw;
-    z-index: -1;
-}
-.voteInfoBack4 {
-    width: 72vmin;
-    height: 0.5vmax;
-    background: linear-gradient(120deg,#c5e659, #45b649);
-    border-radius: 3px;
-    opacity: 0.1;
-    position: relative;
-    top: -22vh;
-    left: 14vw;
-    z-index: -1;
 }

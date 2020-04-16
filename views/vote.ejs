@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vote Page</title>
+    <title>성균투표</title>
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
+    
     <!-- css -->
     <link rel="stylesheet" href="css/vote.css">
 
@@ -22,32 +23,32 @@
     </div>
     
     <div class="candidate1">
-        <img src="img/candidate1.jpg" class="candidateEmblem">
+        <div class="pattern"></div>
         <div class="candi1Info">
             <p id="candiNumber">기호 1번</p>
             <p id="candiBrand">레드벨벳</p>
         </div>
         <div class="candi1Names">
-            <p id="president">정후보 : 아이린</p>
-            <p id="vicePresidnet">부후보 : 김예림</p>
+            <p id="president">정후보 : 아이린 &nbsp; 부후보 : 김예림</p>
         </div>
-        <img src="img/vote.png" id="vote1">
+        <button id="vote1">투 표 하 기</button>
+        <!-- <img src="img/vote.png" id="voteMark"> -->
     </div>
     
     <div class="candidate2">
-        <img src="img/candidate2.png" class="candidateEmblem">
+        <div class="pattern"></div>
         <div class="candi2Info">
             <p id="candiNumber">기호 2번</p>
             <p id="candiBrand">아이즈원</p>
         </div>
         <div class="candi1Names">
-            <p id="president">정후보 : 김민주</p>
-            <p id="vicePresidnet">부후보 : 권은비</p>
+            <p id="president">정후보 : 김민주 &nbsp; 부후보 : 권은비</p>
         </div>
-        <img src="img/vote.png" id="vote2">
+        <button id="vote2">투 표 하 기</button>
+        <!-- <img src="img/vote.png" id="voteMark"> -->
     </div>
     <div class="giveUpSection">
-        <input type="button" id="giveUp" value="기권">
+        <button id="giveUp">기권</button>
     </div>
 </body>
 <!-- jqeury -->

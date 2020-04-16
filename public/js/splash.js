@@ -1,6 +1,6 @@
 $(document).ready(() => {
     console.log("open splash")
-    $("#splash").fadeOut(2000, () => {
+    $("#splash").fadeOut(4000, () => {
         window.location.href = "/login"
     })
 })
