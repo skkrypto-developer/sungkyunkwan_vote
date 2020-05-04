@@ -32,7 +32,7 @@ Usage
 ------------------
 Login
 
-![login](https://user-images.githubusercontent.com/52766951/80988892-1b5fd200-8e6f-11ea-8ec7-599ccbb1fbc8.PNG)
+![login](https://user-images.githubusercontent.com/51280827/77818531-80a90080-7116-11ea-9496-2a37b4ced3cc.png)
 
 - GLS 로그인을 통해 학생 본인임을 인증할 수 있습니다. 
 
@@ -42,7 +42,8 @@ Login
 
 ---------------------
 Menu
-![menu](https://user-images.githubusercontent.com/51280827/77818532-830b5a80-7116-11ea-997c-7bdf1ec42c6a.PNG)
+
+<img width="375" alt="IMG_0256" src="https://user-images.githubusercontent.com/52766951/80988892-1b5fd200-8e6f-11ea-8ec7-599ccbb1fbc8.PNG">
 
 -logout : 로그아웃할 수 있습니다
 
@@ -55,7 +56,7 @@ Menu
 -----------------
 SetUserKey
 
-![setUserKey](https://user-images.githubusercontent.com/51280827/77818534-84d51e00-7116-11ea-84e0-7c27376f8500.PNG)
+<img width="375" alt="IMG_0256" src="https://user-images.githubusercontent.com/52766951/80989237-a04aeb80-8e6f-11ea-822f-41d90b1ebb32.PNG">
 
 -로그인시에 GLS 데이터베이스에서 가지고온 학생의 학번값을 확인하는 페이지입니다. 
 
@@ -64,7 +65,8 @@ SetUserKey
 ---------------
 Vote
 
-![vote](https://user-images.githubusercontent.com/51280827/77818537-87d00e80-7116-11ea-9a07-abfe929275c9.PNG)
+<img width="373" alt="IMG_0265" src="https://user-images.githubusercontent.com/52766951/80989317-bfe21400-8e6f-11ea-8f1d-82753ee37454.PNG">
+
 
 -단선 혹은 경선의 경우가 있습니다
 
@@ -81,7 +83,7 @@ Vote
 --------------
 MyPage
 
-![mypage](https://user-images.githubusercontent.com/51280827/77818536-869ee180-7116-11ea-983e-7ce0cef1cb35.png)
+<img width="371" alt="IMG_0264" src="https://user-images.githubusercontent.com/52766951/80989412-dbe5b580-8e6f-11ea-8688-ef61011466e6.PNG">
 
 -토큰의 갯수와 지갑주소를 알 수 있습니다
 
