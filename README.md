@@ -32,7 +32,7 @@ Usage
 ------------------
 Login
 
-![login](https://user-images.githubusercontent.com/51280827/77818531-80a90080-7116-11ea-9496-2a37b4ced3cc.png)
+![login](https://user-images.githubusercontent.com/52766951/80988892-1b5fd200-8e6f-11ea-8ec7-599ccbb1fbc8.PNG)
 
 - GLS 로그인을 통해 학생 본인임을 인증할 수 있습니다. 
 
