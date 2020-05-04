@@ -45,8 +45,6 @@ Menu
 
 <img width="375" alt="IMG_0256" src="https://user-images.githubusercontent.com/52766951/80988892-1b5fd200-8e6f-11ea-8ec7-599ccbb1fbc8.PNG">
 
--logout : 로그아웃할 수 있습니다
-
 -투표하기 : 투표하기 버튼을 눌러서 원하는 후보에게 투표하러 갈 수 있습니다. SetUserKey로 먼저 이동합니다
 
 -공약확인 : 해당 후보들의 공약을 확인할 수 있습니다. 페이스북 학생회 페이지와 링크가 연결되어 있습니다.
@@ -84,6 +82,8 @@ Vote
 MyPage
 
 <img width="371" alt="IMG_0264" src="https://user-images.githubusercontent.com/52766951/80989412-dbe5b580-8e6f-11ea-8688-ef61011466e6.PNG">
+
+-logout : 로그아웃할 수 있습니다
 
 -토큰의 갯수와 지갑주소를 알 수 있습니다
 
